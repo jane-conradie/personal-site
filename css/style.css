@@ -267,13 +267,13 @@ hr {
   .contact-me p {
     font-family: 'Playfair Display', serif;
     color: #40514E;
-    font-size: 90%;
+    font-size: 200%;
+    width: 75%;
     margin: auto;
   }
 
   .contact-p {
     padding: 40px 0 40px 0;
-    width: 80%;
   }
 
   .btn {
