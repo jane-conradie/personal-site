@@ -173,7 +173,7 @@ hr {
   .attribution-gif {
     color: #40514E;
     font-family: 'Playfair Display', serif;
-    font-size: 140%;
+    font-size: 80%;
   }
 
   .profile img {
@@ -298,7 +298,7 @@ hr {
   padding: 90px 0 60px 0;
   color: #EAF6F6;
   font-family: 'Playfair Display', serif;
-  font-size: 200%;
+  font-size: 160%;
   position: relative;
   bottom: 60px;
 }
