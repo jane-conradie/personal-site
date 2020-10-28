@@ -26,7 +26,9 @@ body{
 }
 
 .giphy-embed{
-  height: 400px;
+  max-width: 300px;
+  width: 100%;
+  padding-top: 50px;
 }
 
 h1{
@@ -63,8 +65,8 @@ hr {
   color: #DAD2D0;
   border: none;
   border-top: 10px dotted;
-  width: 3%;
-  border-width: 6px;
+  width: 5%;
+  border-width: 13px;
   margin-top: 30px;
   margin-bottom: 30px;
 }
@@ -82,25 +84,31 @@ hr {
   color: #40514E;
 }
 
-.webdev{
-  width: 25%;
+.webdev {
+  width: 100%;
+  max-width: 220px;
   float: left;
   margin-right: 30px;
-  padding-top: 18px;
+  padding-bottom: 40px;
+  padding-top: 23px;
 }
 
 .design{
+  width: 100%;
+  max-width: 220px;
   float: right;
-  width: 25%;
   margin-left: 30px;
+  padding-bottom: 40px;
   padding-top: 20px;
 }
 
 .database{
-  width: 20%;
+  width: 100%;
+  max-width: 200px;
   float: left;
   margin-right: 30px;
-  padding-top: 16px;
+  padding-bottom: 40px;
+  padding-top: 20px;
 }
 
 .profile img{
@@ -168,13 +176,13 @@ hr {
    background-image: linear-gradient(#44B8E7, #64D2E8);
 }
 
-@media only screen and (max-width: 1580px) {
+@media only screen and (max-width: 1200px) {
 
   h1 {
-    margin-top: 50px;
+    margin-top: 0;
     margin-bottom: 0;
     font-family: 'Sacramento', cursive;
-    font-size: 1400%;
+    font-size: 6rem;
     color: #66BFBF;
   }
 
@@ -185,19 +193,20 @@ hr {
   }
 
   .profile img {
-    height: 450px;
+    max-width: 280px;
+    height: auto;
   }
 
   h2 {
   color: #66BFBF;
-  font-size: 700%;
+  font-size: 3rem;
   font-family: 'Amatic SC', cursive;
   margin: 20px 5px 5px 5px;
   }
 
   .profile p {
     color: #40514E;
-    font-size: 250%;
+    font-size: 1.2rem;
     width: 60%;
     display: inline-block;
   }
@@ -206,28 +215,34 @@ hr {
     color: #DAD2D0;
     border: none;
     border-top: 10px dotted;
-    width: 10%;
-    border-width: 20px;
+    width: 5%;
+    border-width: 11px;
     margin-top: 30px;
     margin-bottom: 30px;
   }
 
   .webdev {
-    width: 70%;
     display: block;
-    float: none;
-    margin: auto;
+      float: none;
+      margin: auto;
+      max-width: 145px;
+      height: auto;
+      width: 100%;
   }
 
   .design{
-    width: 70%;
     display: block;
     float: none;
     margin: auto;
+    max-width: 145px;
+    height: auto;
+    width:  100%;
   }
 
   .database{
-    width: 60%;
+    max-width: 125px;
+    height: auto;
+    width: 100%;
     display: block;
     float: none;
     margin: auto;
@@ -236,7 +251,7 @@ hr {
   h3 {
     color: #11999E;
     font-family: 'Amatic SC', cursive;
-    font-size: 600%;
+    font-size: 2.3rem;
     margin: 30px 0 20px 0;
   }
 
@@ -251,7 +266,7 @@ hr {
   .skill-row p {
     font-family: 'Playfair Display', serif;
     color: #40514E;
-    font-size: 250%;
+    font-size: 1.2rem;
 }
 
   .skills{
@@ -267,22 +282,22 @@ hr {
   .contact-me p {
     font-family: 'Playfair Display', serif;
     color: #40514E;
-    font-size: 200%;
-    width: 75%;
+    font-size: 1.2rem;
     margin: auto;
   }
 
   .contact-p {
     padding: 40px 0 40px 0;
+    width: 80%;
   }
 
   .btn {
     border-radius: 12px;
     color: #FFFFFF;
     font-family: 'Playfair Display', serif;
-    font-size: 40px;
+    font-size: 22px;
     font-weight: 300;
-    padding: 40px;
+    padding: 15px;
     border: solid #44B8E7 1px;
     text-decoration: none;
     display: inline-block;
@@ -296,23 +311,24 @@ hr {
   color: #EAF6F6;
   font-family: 'Playfair Display', serif;
   text-decoration: none;
-  font-size: 280%;
+  font-size: 1.2rem;
   font-weight: 400;
   display: inline-block;
   padding: 50px 60px 0 60px;
 }
 
 .copyright {
-  padding: 130px 0 60px 0;
+  padding: 55px 0 60px 0;
   color: #EAF6F6;
   font-family: 'Playfair Display', serif;
-  font-size: 110%;
+  font-size: 1.2rem;
   position: relative;
-  bottom: 60px;
+  bottom: 0;
 }
 
 .career{
-  margin: 0 auto 30px auto;
+  margin: 30px auto auto auto;
   width: 70%;
 }
+
 }
