@@ -9,11 +9,16 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="images/favicon.ico">
     <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Quattrocento+Sans&family=Sacramento&display=swap&family=Playfair+Display&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   </head>
   <body>
     <div class='top-container'>
+      <div class="navigate-bar">
+        <button class="nav-button home" onclick="window.location.href='./index.html'">HOME</button>
+        <button class="nav-button projects" onclick="window.location.href='./pages/projects.html'">PROJECTS</button>
+      </div>
       <h1>I'm Jané.</h1>
-      <h2 class="career">web developer intern</h2>
+      <h2 class="career">junior web developer</h2>
       <div>
         <iframe src="https://giphy.com/embed/2zoFXAdVvgQAoGBfwV" frameBorder="0" class="giphy-embed" ></iframe>
       </div><p><a href="https://giphy.com/gifs/computer-writing-2zoFXAdVvgQAoGBfwV" class="attribution-gif">via GIPHY</a></p>
@@ -30,33 +35,50 @@
     <div class="skill-row">
       <img class="webdev" src="images/webdev.png" alt="">
       <h3>Web Development</h3>
-      <p>In 2020 I had to develop an ecommerce website for a client as part of a project. The work included HTML, CSS, Javascript and PHP. This past year I have been doing an internship at Newsclip Media Monitoring and have built up my skills and knowledge regarding web development.</p>
+      <p>In 2020 I had to develop an ecommerce website for a client as part of a project. The work included HTML, CSS, Javascript and PHP. This past year I have been doing an internship at Newsclip Media Monitoring and have built up my skills and knowledge regarding web development technologies. I have gained exposure to AJAX calls, API's, JSON, and JQuery - and have expanded on my HTML5 and Javascript skills. I have built some cool customer-facing user interfaces throughout my career, and look forward to creating even more awesome and engaging interfaces that get better the more I learn and grow.</p>
     </div>
     <div class="skill-row">
       <img class="design" src="images/design.png" alt="">
       <h3>UI & UX Design</h3>
-      <p class="design-description">My degree included user interface and user experience design. The topic of Nielson's ten heuristics was a focal point. I matriculated with design as a module, you can say that I have an eye for design.</p>
+      <p class="design-description">My degree included user interface and user experience design. The topic of Nielson's ten heuristics was a focal point. I matriculated with design as a module, so you can say that I have an eye for design. I strive to make pixel-perfect user interfaces.</p>
     </div>
     <div class="skill-row">
       <img class="database" src="images/database.png" alt="">
       <h3>Database Development</h3>
-      <p>Database development was an essential subject in my degree and also included an in-depth project that had to be completed. Creating programs that made use of databases was a huge part of my studies. I worked exclusively with MySQL.</p>
+      <p>Database development was an essential subject in my degree and also included an in-depth project that had to be completed. Creating programs that made use of databases was a huge part of my studies. I worked exclusively with MySQL. Throughout my intership I have been learning and using SSMS, and have expanded on my SQL skills, as well as learning TSQL. I have learned a lot about the benefits of properly using stored procedures when it comes to fetching data from a database.</p>
+    </div>
+    <div class="skill-row">
+      <img class="api" src="images/api.png" alt="">
+      <h3>API Development</h3>
+      <p>I worked a lot with API's during my internship - from interacting with external API's to creating my own. I have written quite a few endpoints and services using C#, alongside LINQ for the database queries. I have also used external API's for reaching certain goals - one of these was using the Linkedin API to enable clients to schedule posts on-platform to be published on Linkedin at specified times.</p>
+    </div>
+    <div class="skill-row">
+      <img class="cicd" src="images/infinite.png" alt="">
+      <h3>CI/CD</h3>
+      <p>I have an understanding of the CI/CD technologies like Git, Gitlab, and Github. I use these daily to keep my work up-to-date and to adhere with the DevOps cycle. I also learnt about Kubernetes, and Docker - as well as how to write dockerfiles, and gitlab-ci.yml files for automatic deployments to Gitlab.</p>
     </div>
   </div>
   <hr>
   <div class="contact-me">
     <h2 class="get-in">Get In Touch</h2>
     <h3 class="sub-head">If you're looking to add a web developer to your company.</h3>
-    <p class="contact-p">I am almost finished with my web development internship and have more to offer with my new skills, knowledge, and experience.</p>
+    <p class="contact-p">I am nearing the end of my web development internship and have more to offer with my new skills, knowledge, and experience.</p>
     <a class="btn" href="mailto:jconradie1998@email.com">CONTACT ME</a>
   </div>
 </div>
 
 
 <div class="bottom-container">
-  <a class="footer-link" href="https://www.linkedin.com/in/jan%C3%A9-conradie-46687b186/">LinkedIn</a>
+  <a class="footer-link" href="https://www.linkedin.com/in/jan%C3%A9-conradie-46687b186/">Linkedin</a>
   <a class="footer-link" href="https://www.facebook.com/jane.conradie.3">Facebook</a>
-  <p class="copyright">© 2020 Jané Conradie.</p>
+  <p class="copyright">© 2021 Jané Conradie.</p>
+  <div class="attribution">Icons made by <a href="https://www.flaticon.com/authors/edtim" title="edt.im">edt.im</a> from <a
+    href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+  <div class="attribution">Icons made by <a href="https://www.flaticon.com/authors/justicon" title="justicon">justicon</a> from <a
+    href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
 </div>
+
   </body>
+
+  <script src="./js/home/index.js"></script>
 </html>
