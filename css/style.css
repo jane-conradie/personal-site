@@ -188,6 +188,10 @@ hr {
   font-family: "Playfair Display", serif;
 }
 
+.attribution > a {
+  color: white;
+}
+
 .copyright {
   margin: 0;
   padding: 50px 0 30px 0;
@@ -283,6 +287,24 @@ hr {
 
   .database {
     max-width: 125px;
+    height: auto;
+    width: 100%;
+    display: block;
+    float: none;
+    margin: auto;
+  }
+
+  .api {
+    display: block;
+    float: none;
+    margin: auto;
+    max-width: 145px;
+    height: auto;
+    width: 100%;
+  }
+
+  .cicd {
+    max-width: 155px;
     height: auto;
     width: 100%;
     display: block;

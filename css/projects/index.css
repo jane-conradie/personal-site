@@ -30,10 +30,6 @@ body {
   padding-bottom: 5px;
 }
 
-.middle-container {
-  padding-top: 40px;
-}
-
 .bottom-container {
   background-color: #66bfbf;
   margin: 0;
@@ -67,8 +63,79 @@ h3 {
   width: 80%;
 }
 
-.career {
-  margin: 0 0 30px 0;
+.summary {
+  font-family: "Playfair Display", serif;
+  margin: 35px auto 35px auto;
+  width: 60%;
+}
+
+.summary > a {
+  color: #66bfc5;
+  text-decoration: none;
+}
+
+.summary > a:hover {
+  color: #4d8f94;
+  cursor: pointer;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 550px;
+  height: 300px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px;
+  margin: auto;
+  cursor: pointer;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back-react {
+  background-color: #eaf6f6;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+.flip-card-back-bootstrap {
+  background-color: #eaf6f6;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+.flip-card-back > a {
+  color: black;
+  text-decoration: none;
+}
+
+.flip-card-back > p {
+  color: black;
+  font-family: "Playfair Display", serif;
 }
 
 hr {
@@ -85,61 +152,6 @@ hr {
   width: 550px;
   height: 300px;
   box-shadow: 0 2px 7px -3px #878383ed;
-}
-
-.project-snippet:hover {
-  /* add card flip */
-}
-
-.webdev {
-  width: 100%;
-  max-width: 220px;
-  float: left;
-  margin-right: 30px;
-  padding-bottom: 40px;
-  padding-top: 23px;
-}
-
-.design {
-  width: 100%;
-  max-width: 220px;
-  float: right;
-  margin-left: 30px;
-  padding-bottom: 40px;
-  padding-top: 20px;
-}
-
-.database {
-  width: 100%;
-  max-width: 200px;
-  float: left;
-  margin-right: 30px;
-  padding-bottom: 40px;
-  padding-top: 20px;
-}
-
-.profile img {
-  height: 250px;
-}
-
-.profile p {
-  color: #40514e;
-  font-size: 110%;
-  width: 20%;
-  display: inline-block;
-}
-
-.get-in {
-  padding: 20px 0 20px 0;
-}
-
-.contact-p {
-  padding: 20px 0 20px 0;
-}
-
-.contact-me p {
-  font-family: "Playfair Display", serif;
-  color: #40514e;
 }
 
 .footer-link {
@@ -160,30 +172,7 @@ hr {
   font-size: 110%;
 }
 
-.btn {
-  border-radius: 12px;
-  color: #ffffff;
-  font-family: "Playfair Display", serif;
-  font-size: 18px;
-  font-weight: 300;
-  padding: 10px;
-  border: solid #44b8e7 1px;
-  text-decoration: none;
-  display: inline-block;
-  cursor: pointer;
-  text-align: center;
-  margin: 30px 0 60px 0;
-  background-image: linear-gradient(#64d2e8, #44b8e7);
-}
-
-.btn:hover {
-  border: solid #eaf6f6 1px;
-  border-radius: 12px;
-  text-decoration: none;
-  background-image: linear-gradient(#44b8e7, #64d2e8);
-}
-
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 660px) {
   h1 {
     margin-top: 0;
     margin-bottom: 0;
@@ -192,29 +181,11 @@ hr {
     color: #66bfbf;
   }
 
-  .attribution-gif {
-    color: #40514e;
-    font-family: "Playfair Display", serif;
-    font-size: 80%;
-  }
-
-  .profile img {
-    max-width: 280px;
-    height: auto;
-  }
-
   h2 {
     color: #66bfbf;
     font-size: 3rem;
     font-family: "Amatic SC", cursive;
     margin: 20px 5px 5px 5px;
-  }
-
-  .profile p {
-    color: #40514e;
-    font-size: 1.2rem;
-    width: 60%;
-    display: inline-block;
   }
 
   hr {
@@ -227,33 +198,6 @@ hr {
     margin-bottom: 30px;
   }
 
-  .webdev {
-    display: block;
-    float: none;
-    margin: auto;
-    max-width: 145px;
-    height: auto;
-    width: 100%;
-  }
-
-  .design {
-    display: block;
-    float: none;
-    margin: auto;
-    max-width: 145px;
-    height: auto;
-    width: 100%;
-  }
-
-  .database {
-    max-width: 125px;
-    height: auto;
-    width: 100%;
-    display: block;
-    float: none;
-    margin: auto;
-  }
-
   h3 {
     color: #11999e;
     font-family: "Amatic SC", cursive;
@@ -261,56 +205,14 @@ hr {
     margin: 30px 0 20px 0;
   }
 
-  .skill-row {
-    display: inline-block;
-    width: 60%;
-    margin: 40px auto 40px auto;
-    text-align: center;
-    line-height: 2;
+  .flip-card {
+    width: 450px;
+    height: 250px;
   }
 
-  .skill-row p {
-    font-family: "Playfair Display", serif;
-    color: #40514e;
-    font-size: 1.2rem;
-  }
-
-  .skills {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .sub-head {
-    width: 80%;
-    margin: auto;
-  }
-
-  .contact-me p {
-    font-family: "Playfair Display", serif;
-    color: #40514e;
-    font-size: 1.2rem;
-    margin: auto;
-  }
-
-  .contact-p {
-    padding: 40px 0 40px 0;
-    width: 80%;
-  }
-
-  .btn {
-    border-radius: 12px;
-    color: #ffffff;
-    font-family: "Playfair Display", serif;
-    font-size: 22px;
-    font-weight: 300;
-    padding: 15px;
-    border: solid #44b8e7 1px;
-    text-decoration: none;
-    display: inline-block;
-    cursor: pointer;
-    text-align: center;
-    margin: 30px 0 80px 0;
-    background-image: linear-gradient(#64d2e8, #44b8e7);
+  .project-snippet {
+    width: 450px;
+    height: 250px;
   }
 
   .footer-link {
@@ -331,9 +233,24 @@ hr {
     position: relative;
     bottom: 0;
   }
+}
 
-  .career {
-    margin: 30px auto auto auto;
-    width: 70%;
+@media only screen and (max-width: 525px) {
+  .flip-card {
+    width: 300px;
+    height: 150px;
+  }
+
+  .flip-card-back > h2 {
+    font-size: 2rem;
+  }
+
+  .flip-card-back > p {
+    font-size: 14px;
+  }
+
+  .project-snippet {
+    width: 300px;
+    height: 150px;
   }
 }
