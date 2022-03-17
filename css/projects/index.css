@@ -87,6 +87,7 @@ h3 {
   perspective: 1000px;
   margin: auto;
   cursor: pointer;
+  margin-bottom: 20px;
 }
 
 .flip-card-inner {
@@ -136,6 +137,7 @@ h3 {
 .flip-card-back > p {
   color: black;
   font-family: "Playfair Display", serif;
+  padding: 10px;
 }
 
 hr {
