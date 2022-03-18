@@ -86,7 +86,6 @@ h3 {
   border: 1px solid #f1f1f1;
   perspective: 1000px;
   margin: auto;
-  cursor: pointer;
   margin-bottom: 20px;
 }
 
@@ -138,6 +137,20 @@ h3 {
   color: black;
   font-family: "Playfair Display", serif;
   padding: 10px;
+}
+
+.flip-card-back > button {
+  margin: 3px;
+  padding: 10px;
+  border: none;
+  color: white;
+  background: #6ac1c1;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.flip-card-back > button:hover {
+  background: #4d9191;
 }
 
 hr {
